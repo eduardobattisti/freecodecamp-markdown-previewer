@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+};
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {        
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+        linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 2em;
+
+    .row {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;        
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;        
+        flex-wrap: wrap;       
+
+        .normal, .marked {
+            width: 40%;
+            min-width: 380px;
+            min-height: 100%;
+            height: auto;
+            margin-bottom: 3em;
+            border-right: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);;
+            border-bottom: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);;
+
+            h4 {
+                background-color: gray;
+                background-image: linear-gradient(transparent 50%, antiquewhite 50%);
+                background-size: 2px 2px;
+                text-align: center;
+                padding: 1em 0;
+                margin: 0;
+                border: 1px solid gray;
+                border-bottom: 0px;
+                width: 100%;                
+            }
+
+        }        
+
+    }
+
+    .developer {
+        margin-bottom: 0;
+        background-color: slategray;
+
+        a, h5 {
+            text-decoration: none;
+            color: white;    
+        }
+
+    }
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border: 3px solid black;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    
+    img {
+        margin-left: auto;
+        margin-right: 1em;
+    }
+
+    h2 {
+        margin-right: auto;        
+    }
+
+}
+
+.img-fluid {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;   
+}
+
+#editor, #editor:focus, #editor:active, #preview {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    outline: none;
+    text-indent: 3px;
+}
+
+#editor, #preview {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+    min-height: 40em;
+    height: auto;
+    background-color: antiquewhite;    
+}
+
+#editor {    
+    height: 94%;
+    resize: none;
+}
+
+#preview::first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 670px) {
+ 
+    body {
+        height: auto;
+    }    
+
+}
