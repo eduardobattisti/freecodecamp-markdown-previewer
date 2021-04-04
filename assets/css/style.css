@@ -120,7 +120,6 @@ img {
   border: 1px solid gray;
   border-collapse: collapse;
   outline: none;
-  text-indent: 3px;
 }
 
 #editor, #preview {

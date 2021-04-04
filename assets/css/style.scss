@@ -38,8 +38,8 @@ body {
             min-height: 100%;
             height: auto;
             margin-bottom: 3em;
-            border-right: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);;
-            border-bottom: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);;
+            border-right: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+            border-bottom: 10px solid linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
 
             h4 {
                 background-color: gray;
@@ -107,8 +107,7 @@ img {
 #editor, #editor:focus, #editor:active, #preview {
     border: 1px solid gray;
     border-collapse: collapse;
-    outline: none;
-    text-indent: 3px;
+    outline: none;    
 }
 
 #editor, #preview {
