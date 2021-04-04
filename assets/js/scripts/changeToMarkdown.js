@@ -5,6 +5,7 @@ marked.setOptions({
     breaks: true,
 })
 
+const editor = document.getElementById('editor');
 const outputTextArea = document.getElementById('preview');
 
 const changeToMarkdown = event => {    
@@ -15,4 +16,12 @@ const changeToMarkdown = event => {
 
 };
 
-export default changeToMarkdown;
+const initialText = () => {
+
+    if(editor.textContent) {
+        outputTextArea.innerHTML = marked(editor.textContent);
+    };
+
+};
+
+export { changeToMarkdown, initialText };

@@ -1,5 +1,4 @@
-import changeToMarkdown from './changeToMarkdown.js';
-import initialText from './initialText.js';
+import { changeToMarkdown,  initialText} from './changeToMarkdown.js';
 
 const inputTextArea = document.getElementById('editor');
 
